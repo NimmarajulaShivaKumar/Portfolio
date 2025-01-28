@@ -1,0 +1,55 @@
+.AboutSection {
+ 
+  padding: 20px;
+  border: 2px solid rgb(235, 228, 228);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  /* font-family: "Roboto Condensed", serif; */
+  font-size: xx-large;
+  /* font-family: "Roboto", serif; */
+  font-family: "Belanosima", serif;
+}
+
+.Container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 80px;
+}
+.ImageDiv {
+  flex: 1;
+  text-align: center;
+}
+.Image {
+  height: 400px;
+  width: auto;
+}
+.AboutText {
+  flex: 2;
+}
+.AboutText h2 {
+  margin-bottom: 1rem;
+}
+.AboutText p {
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .Container {
+    flex-direction: column; /* Stack image and text vertically */
+    text-align: center; /* Center text */
+    gap: 20px;
+  }
+  .AboutText {
+    text-align: left;
+  }
+  .AboutText {
+    font-size: 1rem;
+  }
+  .ImageDiv {
+    margin-bottom: 20px;
+    margin-top: 80px;
+  }
+}

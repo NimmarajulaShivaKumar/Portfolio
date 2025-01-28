@@ -1,0 +1,93 @@
+/* Experience.module.css */
+.experience {
+    padding: 80px 20px;
+    background-color: #0d1117;
+    color: #fff;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+.CompanyName{
+    color: #086cde;
+}
+
+.experienceHeading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.experienceTitle {
+    background-color: #30363d;
+    padding: 5px 15px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.experienceList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.experienceItem {
+    background-color: #161b22;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.logoContainer {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.companyLogo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.experienceDetails {
+    flex: 1;
+}
+
+.titleDuration {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.duration {
+    font-weight: bold;
+    color: #8b949e;
+    white-space: nowrap; /* Prevent duration from wrapping */
+}
+
+.descriptionList {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #8b949e;
+}
+
+@media (max-width: 768px) {
+    .experienceItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logoContainer {
+        margin: 0 auto; /* Center the logo on small screens */
+    }
+    .titleDuration{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

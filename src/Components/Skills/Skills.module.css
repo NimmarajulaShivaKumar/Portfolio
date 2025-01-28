@@ -1,0 +1,107 @@
+.SkillsSection {
+  background-color: rgb(0, 0, 0);
+  max-height: 2500px;
+  height: auto;
+  color: rgb(251, 253, 255);
+  border: 2px solid rgb(232, 209, 209);
+  padding: 55px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  /* overflow: hidden;*/
+}
+
+.Container {
+  max-width: 1200px;
+  border: 2px solid green;
+  padding: 55px;
+  background-color: rgb(6, 3, 3);
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 3px 3px 5px rgb(154, 149, 149);
+}
+
+.SkillsHeading {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.skillsImage {
+  border: 2px solid rgb(239, 205, 205);
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px 2px rgb(110, 107, 107);
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  padding: 40px;
+  margin-bottom: 10px;
+}
+
+.Title {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  font-weight: bolder;
+  color: black;
+  background-color: rgb(96, 170, 230);
+}
+.skillsGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+/* .skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+} */
+/* .SkillItem {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  border-radius: 8px;
+} */
+.SkillItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+.SkillItem:hover {
+  transform: translateY(-5px);
+  background-color: #000000;
+}
+.icons {
+  height: 50px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: rgb(28, 19, 19);
+}
+.SkillName {
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+/* @media (max-width: 768px) {
+    .skillsGrid {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+
+    .skillLogo {
+        font-size: 2.5em;
+    }
+} */

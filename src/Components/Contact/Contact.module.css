@@ -1,0 +1,108 @@
+/* Contact.module.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* Import Poppins */
+
+.contact {
+  padding: 80px 20px;
+  background-color: #fff; /* Or your preferred background */
+  font-family: "Poppins", sans-serif; /* Use Poppins as the main font */
+  color: black;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+}
+
+.contactForm {
+  flex: 1;
+}
+
+.contactInfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align items to the top */
+}
+
+.special {
+  font-weight: bold;
+}
+
+.inputField {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Include padding in width */
+  font-family: "Poppins", sans-serif;
+}
+
+.inputField:focus {
+  outline: none;
+  border-color: #007bff; /* Example focus color */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.2);
+}
+
+.submitButton {
+  background-color: #000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #333;
+}
+.email {
+  font-size: 1.3rem;
+  color: #58a6ff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+.socialIcons {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+
+.socialIcon:hover {
+  background-color: #000;
+  color: white;
+}
+.businessImg {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .contactInfo {
+    align-items: flex-start;
+  }
+}

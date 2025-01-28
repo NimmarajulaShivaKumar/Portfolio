@@ -1,0 +1,157 @@
+/* Header.css */
+/* Basic Reset and General Styles (Consider using a CSS reset library) */
+/* App.css or Header.module.css */
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #000000;
+  color: #fff;
+  padding: 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  background-image: url("../../assets/g1.jpg");
+  background-size: cover; /* Ensures the image covers the entire h1 */
+  background-position: center; /* Centers the image */
+
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  display: inline-block;
+
+ 
+}
+ 
+ 
+.navList {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.navListOpen {
+  max-height: 500px; /* Adjust based on content */
+  opacity: 1;
+}
+.nav li {
+  margin-left: 1rem;
+}
+.navLink {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.navLink:hover {
+  color: #ddd;
+}
+
+.DownloadBtn {
+  background-color: #3d9e2a;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  white-space: nowrap; /* Prevent text wrapping */
+  margin-left: 1rem; /* Ensure proper spacing */
+  text-align: center;
+  display: flex;
+  gap: 2px;
+  font-weight: bolder;
+}
+
+.DownloadBtn:hover {
+  background-color: #197c29;
+  transition: color 0.3s ease;
+}
+
+.menuIcon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 990px) {
+  .menuIcon {
+    display: flex;
+  }
+  .navList {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden; /* Not visible by default */
+    transition: max-height 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+  }
+  .navListOpen {
+    max-height: 500px;
+    opacity: 1; /* Fully visible */
+    visibility: visible; /* Visible */
+  }
+
+  .navLink {
+    margin-left: 0;
+    padding: 1rem; /* Add padding for dropdown items */
+    text-align: center;
+  }
+
+  .nav li {
+    margin: 1rem 0;
+  }
+  .DownloadBtn {
+    margin: 1rem 0;
+    text-align: center;
+  }
+  .header {
+    margin-bottom: 700px;
+  }
+  .navLink:hover {
+    color: #08c43d;
+  }
+}
