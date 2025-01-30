@@ -48,11 +48,8 @@ ul {
   white-space: nowrap; /* Prevent text wrapping */
   overflow: hidden;
   display: inline-block;
-
- 
 }
- 
- 
+
 .navList {
   display: flex;
   align-items: center;

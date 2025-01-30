@@ -1,6 +1,6 @@
 import React from "react";
 import ProfileImg from "../../assets/profileImg.png";
- 
+
 import styles from "./Cover.module.css";
 
 function Cover() {
