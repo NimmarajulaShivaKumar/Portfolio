@@ -6,13 +6,12 @@ import AboutMe from "./Components/AboutMe/AboutMe";
 import Experience from "./Components/Experience/Experience";
 import Projects from "./Components/Projects/Projects";
 import Contact from "./Components/Contact/Contact";
-import Header1 from "./Components/Header/Header1";
+
 function App() {
   return (
     <>
       <header>
         <Header />
-        {/* <Header1/> */}
       </header>
       <main>
         <section id="home">
